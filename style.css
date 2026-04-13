@@ -1,0 +1,62 @@
+/* ===== 3 COLUMN LAYOUT ===== */
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* LEFT */
+.left-box {
+  background: #e8f5e9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* CENTER */
+.center-box {
+  text-align: center;
+}
+
+/* RIGHT */
+.right-box {
+  background: #fff3e0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.grid-card {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* COLORS */
+.video { background: #1976d2; }
+.pdf { background: #d32f2f; }
+.ppt { background: #7b1fa2; }
+.notice { background: #ef6c00; }
+
+/* BLINK */
+.notice {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0.4;}
+  100% {opacity: 1;}
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}
