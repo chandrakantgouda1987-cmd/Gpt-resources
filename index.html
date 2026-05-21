@@ -1,41 +1,187 @@
-<div class="main-layout">
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GPT Teachers Educational Resources</title>
 
-  <!-- LEFT -->
-  <div class="left-box">
-    <h3>📚 ಇತ್ತೀಚಿನ ಸಂಪನ್ಮೂಲಗಳು</h3>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+}
 
-    <a href="#" class="grid-card video">🎥 Video 1</a>
-    <a href="#" class="grid-card pdf">📄 PDF 2</a>
-    <a href="#" class="grid-card ppt">📊 PPT 3</a>
-    <a href="#" class="grid-card video">🎥 Video 4</a>
-    <a href="#" class="grid-card pdf">📄 PDF 5</a>
+header{
+    background:#0d47a1;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
 
-  </div>
+header img{
+    width:80px;
+}
 
-  <!-- CENTER (YOUR MAIN BOXES) -->
-  <div class="center-box">
+nav{
+    background:#1565c0;
+    padding:10px;
+    text-align:center;
+}
 
-    <div class="grid">
-      <a href="#" class="card orange">ಇ-ಸಂಪನ್ಮೂಲಗಳು</a>
-      <a href="#" class="card purple">ವೀಡಿಯೋ ಪಾಠಗಳು</a>
-      <a href="#" class="card red">ಪಿಡಿಎಫ್‌ಗಳು</a>
-      <a href="#" class="card blue">ಪಿಡಿಎಫ್ ಸಂಪನ್ಮೂಲಗಳು</a>
-      <a href="#" class="card green">ಶೈಕ್ಷಣಿಕ ಆದೇಶಗಳು</a>
-      <a href="#" class="card grey">ಸಂಪರ್ಕಿಸಿ</a>
-    </div>
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
 
-  </div>
+.hero{
+    background:linear-gradient(to right,#1976d2,#42a5f5);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
 
-  <!-- RIGHT -->
-  <div class="right-box">
-    <h3>📢 ಆದೇಶಗಳು</h3>
+.hero h1{
+    font-size:40px;
+}
 
-    <a href="#" class="grid-card notice">📄 Order 1</a>
-    <a href="#" class="grid-card notice">📄 Order 2</a>
-    <a href="#" class="grid-card notice">📄 Order 3</a>
-    <a href="#" class="grid-card notice">📄 Order 4</a>
-    <a href="#" class="grid-card notice">📄 Order 5</a>
+.search-box{
+    text-align:center;
+    margin:30px;
+}
 
-  </div>
+.search-box input{
+    width:60%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
 
+.section{
+    padding:30px;
+}
+
+.section h2{
+    color:#0d47a1;
+    margin-bottom:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card a{
+    text-decoration:none;
+    color:#1565c0;
+    font-weight:bold;
+}
+
+footer{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:24px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>GPT Teachers Educational Resources</h1>
+    <p>ಶಿಕ್ಷಕರ ಶೈಕ್ಷಣಿಕ ಸಂಪನ್ಮೂಲಗಳು</p>
+</header>
+
+<nav>
+    <a href="#">HOME</a>
+    <a href="#">PDF RESOURCES</a>
+    <a href="#">AI VIDEOS</a>
+    <a href="#">QUESTION PAPERS</a>
+    <a href="#">CONTACT</a>
+</nav>
+
+<section class="hero">
+    <h1>WELCOME TO EDUCATIONAL RESOURCES</h1>
+    <p>All Teacher Resources in One Place</p>
+</section>
+
+<div class="search-box">
+    <input type="text" placeholder="Search Resources...">
 </div>
+
+<section class="section">
+    <h2>Latest Resources</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>LBA Question Papers</h3>
+            <a href="#">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Bridge Course</h3>
+            <a href="#">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>School Reports</h3>
+            <a href="#">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>CCE Records</h3>
+            <a href="#">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Useful Links</h3>
+            <a href="#">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>AI Videos</h3>
+            <a href="#">Open</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 GPT Teachers Educational Resources
+</footer>
+
+<a class="whatsapp" href="#">☎</a>
+
+</body>
+</html>
